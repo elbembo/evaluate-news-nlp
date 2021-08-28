@@ -15,5 +15,7 @@ function handleSubmit(event) {
     else
         alert("Please put valid URL")
 }
+function onBlur(){
 
-export { handleSubmit }
+}
+export { handleSubmit ,onBlur}
