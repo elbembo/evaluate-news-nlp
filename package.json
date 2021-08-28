@@ -1,7 +1,7 @@
 {
   "name": "evaluate-news-nlp",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/server/index.js",
   "scripts": {
     "test": "jest",
     "start": "node src/server/index.js",
