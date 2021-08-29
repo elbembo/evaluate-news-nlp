@@ -5,7 +5,7 @@ function handleSubmit(event) {
     // check what text was put into the form field
     let formText = document.getElementById('name').value
     if (Client.checkForName(formText))
-        fetch(`http://localhost:8081/analyze?url=${formText}`)
+        fetch(`/analyze?url=${formText}`)
             .then(res => res.json())
             .then(function (res) {
                 let resHtml = `<div>
