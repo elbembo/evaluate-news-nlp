@@ -1,39 +1,52 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Test</title>
 
-    </head>
+<head>
+    <meta charset="utf-8">
+    <title>Test</title>
 
-    <body>
+</head>
 
-        <header>
-            <div class="">
-                Logo
+<body>
+
+    <header>
+        <div class="">
+            Logo
+        </div>
+        <div class="">
+            navigation
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <form method="POST" class="" onsubmit="return Client.handleSubmit(event)">
+                <input id="name" type="text" name="input" value="" onblur="Client.onBlur()" placeholder="Name">
+                <input id="submit" type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)"
+                    onsubmit="return Client.handleSubmit(event)">
+            </form>
+        </section>
+
+        <section>
+            <strong>Form Results:</strong>
+            <div id="results">
+                <div>
+                    <div><h3>Model :</h3></div>
+                    <div><h3>Score tag :</h3></div>
+                    <div><h3>Agreement :</h3></div>
+                    <div><h3>Subjectivity :</h3></div>
+                    <div><h3>Confidence :</h3></div>
+                    <div><h3>Irony :</h3></div>
+                    <div><h3>status :</h3></div>
+                </div>
             </div>
-            <div class="">
-                navigation
-            </div>
-        </header>
+        </section>
+    </main>
 
-        <main>
-            <section>
-                <form method="POST" class="" onsubmit="return Client.handleSubmit(event)">
-                    <input id="name" type="text" name="input" value="" onblur="Client.onBlur()" placeholder="Name">
-                    <input id="submit" type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
-                </form>
-            </section>
+    <footer>
+        <p>This is a footer</p>
+    </footer>
 
-            <section>
-                <strong>Form Results:</strong>
-                <div id="results"></div>
-            </section>
-        </main>
+</body>
 
-        <footer>
-            <p>This is a footer</p>
-        </footer>
-
-    </body>
 </html>

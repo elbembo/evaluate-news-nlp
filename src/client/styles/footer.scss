@@ -1,0 +1,14 @@
+#results {
+    div{
+        display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+        div{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+    }
+}

@@ -8,7 +8,16 @@ function handleSubmit(event) {
         fetch(`http://localhost:8081/analyze?url=${formText}`)
             .then(res => res.json())
             .then(function (res) {
-                document.getElementById('results').innerHTML = res
+                let resHtml = `<div>
+                <div><h3>Model :</h3> ${res.model}</div>
+                <div><h3>Score tag :</h3> ${res.score_tag}</div>
+                <div><h3>Agreement :</h3> ${res.agreement}</div>
+                <div><h3>Subjectivity :</h3> ${res.subjectivity}</div>
+                <div><h3>Confidence :</h3> ${res.confidence}</div>
+                <div><h3>Irony :</h3> ${res.irony}</div>
+                <div><h3>status :</h3> ${JSON.stringify(res.status)}</div>
+            </div>`
+                document.getElementById('results').innerHTML = resHtml
                 submitButtom.disabled  = false
                 console.log(res)
             })
