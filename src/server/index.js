@@ -5,6 +5,7 @@ const axios = require('axios');
 const dotenv = require('dotenv');
 dotenv.config();
 const apiKey = process.env.API_KEY 
+const PORT = process.env.PORT || 8081 
 //const mockAPIResponse = require('./mockAPI.js')
 console.log(`Your API key is ${process.env.API_KEY}`);
 const app = express()
@@ -19,8 +20,8 @@ app.get('/', function (req, res) {
 })
 
 // designates what port the app will listen to for incoming requests
-app.listen(8081, function () {
-    console.log('Example app listening on port 8081!')
+app.listen(PORT, function () {
+    console.log(`Example app listening on port ${PORT}!`)
 })
 
 
